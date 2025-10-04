@@ -14,7 +14,7 @@ deps_manual:
 app_init:
 	mkdir -p ./data/packed
 	mkdir -p ./data/unpacked
-	mkdir -p ./data/docs
+	mkdir -p ./data/doc
 	mkdir -p ./data/json
 
 data_load:
