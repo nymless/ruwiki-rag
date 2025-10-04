@@ -59,7 +59,7 @@ def main_pipeline(docs_root: str) -> None:
 
     def commit_batch() -> None:
         """Create Qdrant vector store, or use existent one to save the data.
-        Use the buffer to create batches of texts. Clear the buffer after."""
+        Use the buffer to create batch of texts. Clear the buffer after."""
         nonlocal vector_store, buffer
         if not buffer:
             return
