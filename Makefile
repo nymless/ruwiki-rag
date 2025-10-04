@@ -21,7 +21,7 @@ data_load:
 	wget -O ./data/packed/ruwiki-latest-pages-articles.xml.bz2 https://dumps.wikimedia.org/ruwiki/latest/ruwiki-latest-pages-articles.xml.bz2
 
 data_unzip:
-	bunzip2 -v -v ./data/packed/ruwiki-latest-pages-articles.xml.bz2
+	bunzip2 -k -v -v ./data/packed/ruwiki-latest-pages-articles.xml.bz2
 
 extract_docs:
 	python -m wikiextractor.WikiExtractor -o ./data/unpacked ./data/packed/ruwiki-latest-pages-articles.xml
